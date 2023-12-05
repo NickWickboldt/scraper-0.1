@@ -1,9 +1,9 @@
 "use client";
 import { useState } from 'react';
 import {useRouter} from 'next/navigation'
+import styles from './styles.css'
 
 const RunScraperButton = () => {
-
   const router = useRouter();
   const [url, setUrl] = useState('');
 
@@ -18,13 +18,14 @@ const RunScraperButton = () => {
   };
 
   return (
-    <div>
+    <div className='input-box'>
       <input
         placeholder="URL"
         value={url}
         onChange={handleInputChange}
+        className='user-entry'
       />
-      <button onClick={handleClick}>Run Scraper</button>
+      <button onClick={handleClick} className='entry-button'>Run Scraper</button>
     </div>
   );
 };

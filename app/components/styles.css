@@ -1,0 +1,52 @@
+.input-box{
+  display: flex;
+  flex-direction: column;
+  width: 40vmin;
+  align-items: center;
+}
+
+.user-entry{
+  height: 3vmin;
+  width: 100%;
+  margin:1vmin;
+  padding:0.5vmin;
+  font-size:1.5vmin;
+}
+
+.entry-button{
+  height:3vmin; 
+  padding: 0.5vmin;
+  width: 50%; 
+  font-size:1.5vmin;
+}
+
+.data-content-box{
+  width: 60vmin;
+  display: flex;
+  justify-content: center;
+  font-size: 4vmin;
+}
+
+.navbar-box{
+  width: 100%;
+  height:4vmin;
+  background-color: rgb(96, 58, 201);
+  display: flex;
+  flex-direction: row;
+  padding: 1vmin;
+}
+
+.nav-logo{
+  width:5vmin;
+}
+
+.nav-links{
+  font-size:2.5vmin;
+  padding:1vmin;
+  color:white; 
+  text-decoration: none;
+}
+
+.nav-links:hover{
+  text-decoration: underline;
+}

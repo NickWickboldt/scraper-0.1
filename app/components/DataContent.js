@@ -1,20 +1,24 @@
 'use server'
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
+import styles from './styles.css'
 export default async function DataContent(props){
   let searchParams = props.data
   if(searchParams.runScraperButton){
     let info = await runScraper(searchParams.url)
-    console.log(info)
     return (
-        <div>
-          <h1>{info.artist}</h1>
-          <h1>{info.title}</h1>
-          <h1>{info.price}</h1>
+        <div className='data-content-box'>
+          <p>{info.artist}</p>
+          <p>{info.title}</p>
+          <p>{info.price}</p>
         </div>
       )
   }else{
-    return <h1>no data</h1>
+    return (
+      <div className='data-content-box'>
+        <p>no data</p>
+      </div>
+    )
   }
 }
 
