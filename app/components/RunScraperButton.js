@@ -19,6 +19,8 @@ const RunScraperButton = () => {
 
   return (
     <div className='input-box'>
+      <p className='input-box-title'>Scraping the web, not records...</p>
+      <p className='input-box-text'>Paste amazon product link, get results.</p>
       <input
         placeholder="URL"
         value={url}

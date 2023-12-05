@@ -1,16 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,100;1,400;1,700&family=Quicksand:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background: linear-gradient(0.25turn, #635380, #95818D, #493657);
+}
+
 .input-box{
   display: flex;
   flex-direction: column;
-  width: 40vmin;
   align-items: center;
+  background-color: whitesmoke;
+}
+
+.input-box-text{
+  color: #635380; 
+  font-family: 'Exo';
+  font-style: italic;
+}
+
+.input-box-title{
+  font-family: 'Exo'; 
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  color: #635380; 
 }
 
 .user-entry{
   height: 3vmin;
-  width: 100%;
+  width: 80%;
   margin:1vmin;
   padding:0.5vmin;
-  font-size:1.5vmin;
+  font-size:2vmin;
+  font-family: 'Exo';
+  font-style:italic;
 }
 
 .entry-button{
@@ -18,6 +44,20 @@
   padding: 0.5vmin;
   width: 50%; 
   font-size:1.5vmin;
+  background-color: #D7DEDC;
+  border: solid #A7A7A9 1px; 
+  font-family: 'Exo'; 
+  font-style: italic;
+  font-weight: 700;
+  color: #635380; 
+  transition: .3s ease;
+}
+
+.entry-button:hover{
+  background-color: #A7A7A9;
+  color: #431e41;
+  border-color: #7d7d7d;
+  cursor: pointer;
 }
 
 .data-content-box{
@@ -29,11 +69,10 @@
 
 .navbar-box{
   width: 100%;
-  height:4vmin;
-  background-color: rgb(96, 58, 201);
+  height:5vmin;
+  background-color: #dfdedc;
   display: flex;
   flex-direction: row;
-  padding: 1vmin;
 }
 
 .nav-logo{
@@ -43,10 +82,78 @@
 .nav-links{
   font-size:2.5vmin;
   padding:1vmin;
-  color:white; 
+  color:#431e41; 
   text-decoration: none;
+  transition: 0.3s ease;
+  margin-left:2vmin;
+  transform: translate(-30%);
+  font-family: 'Exo';
 }
 
 .nav-links:hover{
-  text-decoration: underline;
+  color: #A7A7A9; 
+}
+
+.nav-links-box{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+@media only screen and (orientation: portrait) {
+  .input-box{
+    width:70vmin;
+    height: 60vmin;
+    margin-top: 20vmin;
+    border-radius: 2vmin;
+  }
+  .input-box-title{
+    font-size:5.5vmin;
+    padding:2vmin;
+  }
+  .input-box-text{ 
+    font-size:3vmin;
+    padding:2vmin;
+  }
+  .user-entry{
+    margin:3vmin;
+    padding:1.5vmin;
+    font-size:2.5vmin;
+  }
+  .entry-button{
+    height:fit-content;
+    font-size:4vmin;
+    margin:3vmin;
+    padding:1vmin;
+    border-radius: 1.75vmin;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .input-box{
+    width:100vmin;
+    height:70vmin;
+    margin-top:10vmin;
+    border-radius: 2vmin;
+  }
+  .input-box-title{
+    font-size:7vmin;
+    padding:3vmin;
+  }
+  .input-box-text{
+    font-size:4vmin;
+    margin:3vmin;
+  }
+  .user-entry{
+    font-size:3vmin;
+    margin:3vmin;
+    padding:2vmin;
+  }
+  .entry-button{
+    height: fit-content;
+    font-size:6vmin;
+    margin:3vmin;
+    padding:1.5vmin;
+    border-radius: 1.5vmin;
+  }
 }
