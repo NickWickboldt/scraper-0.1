@@ -1,9 +1,9 @@
 "use client";
 import { useState } from 'react';
 import {useRouter} from 'next/navigation'
-import styles from './styles.css'
+import styles from '../styles.css'
 
-const RunScraperButton = () => {
+const RunScraperButton = (props) => {
   const router = useRouter();
   const [url, setUrl] = useState('');
 
@@ -18,7 +18,7 @@ const RunScraperButton = () => {
   };
 
   return (
-    <div className='input-box'>
+    <div className={props.position}>
       <p className='input-box-title'>Scraping the web, not records...</p>
       <p className='input-box-text'>Paste amazon product link, get results.</p>
       <input

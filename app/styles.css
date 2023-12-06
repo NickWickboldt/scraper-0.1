@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,100;1,400;1,700&family=Quicksand:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+/*
+english violet 493657
+ultra violet 635380
+dark purple 241023
+mountbatten pink 95818D
+platinum D7DEDC
+french gray A7A7A9
+*/
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background: linear-gradient(0.25turn, #635380, #95818D, #493657);
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  transition: .75s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.input-box-text{
+  color: #635380; 
+  font-family: 'Exo';
+  font-style: italic;
+}
+
+.input-box-title{
+  font-family: 'Exo'; 
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  color: #635380; 
+}
+
+.user-entry{
+  height: 3vmin;
+  width: 80%;
+  margin:1vmin;
+  padding:0.5vmin;
+  font-size:2vmin;
+  font-family: 'Exo';
+  font-style:italic;
+}
+
+.entry-button{
+  height:fit-content; 
+  width: 50%; 
+  background-color: #D7DEDC;
+  border: solid #A7A7A9 1px; 
+  font-family: 'Exo'; 
+  font-style: italic;
+  font-weight: 700;
+  color: #635380; 
+  transition: .3s ease;
+}
+
+.track-button{
+  height: fit-content;
+  width: 30vmin;
+  background-color: #D7DEDC;
+  border: solid #A7A7A9 1px; 
+  font-family: 'Exo'; 
+  font-style: italic;
+  font-weight: 700;
+  color: #635380; 
+  transition: .3s ease;
+  border-radius: 1.25vmin;
+}
+
+.entry-button:hover, .track-button:hover{
+  background-color: #A7A7A9;
+  color: #431e41;
+  border-color: #7d7d7d;
+  cursor: pointer;
+}
+
+.navbar-box{
+  width: 100%;
+  height:5vmin;
+  background-color: #dfdedc;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo{
+  width:5vmin;
+}
+
+.nav-links{
+  font-size:2.5vmin;
+  padding:1vmin;
+  color:#431e41; 
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-left:2vmin;
+  transform: translate(-30%);
+  font-family: 'Exo';
+}
+
+.nav-links:hover{
+  color: #A7A7A9; 
+}
+
+.nav-links-box{
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+.data-content-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-name, .artist-name, .album-price{
+  font-family: 'Exo';
+  color:#281327;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0.5vmin;
+}
+.album-img{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1vmin;
+}
+
+.footer{
+  position: absolute;
+  height:5vmin;
+  bottom:0;
+  width: 100%;
+  background-color: #dfdedc;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text{
+  font-size:2.5vmin;
+  font-family: 'Exo';
+  font-style: italic;
+  margin-left: 1vmin;
+}
+
+.footer-list{
+  display: flex;
+  align-items: center;
+}
+
+.footer-list-item{
+  height:4.5vmin;
+  margin-left: 1vmin;
+}
+
+.footer-list-item:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media only screen and (orientation: portrait) {
+  .input-box{
+    width:70vmin;
+    height: 60vmin;
+    margin-top: 30vmin;
+    border-radius: 2vmin;
+  }
+  .input-box-update{
+    margin-top: 10vmin;
+  }
+  .input-box-title{
+    font-size:5.5vmin;
+    padding:2vmin;
+  }
+  .input-box-text{ 
+    font-size:3vmin;
+    padding:2vmin;
+  }
+  .user-entry{
+    margin:3vmin;
+    padding:1.5vmin;
+    font-size:2.5vmin;
+  }
+  .entry-button{
+    font-size:4vmin;
+    margin:3vmin;
+    padding:1vmin;
+    border-radius: 1.75vmin;
+  }
+  .track-button{
+    font-size:3vmin;
+    margin: 1vmin;
+    padding:0.5vmin;
+  }
+  .data-division{
+    display: flex;
+    flex-direction: column;
+  }
+  .data-content-box{
+    margin-top: 8vmin;
+  }
+  .album-img{
+    width: 30vmin;
+    margin:1vmin;
+  }
+  .artist-name{
+    font-size:3vmin;
+  }
+  .album-name{
+    font-size:4vmin;
+  }
+  .album-price{
+    font-size:2.5vmin;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .input-box{
+    width:100vmin;
+    height:70vmin;
+    margin-top:10vmin;
+    border-radius: 2vmin;
+    margin-left: 5vmin;
+    margin-right:5vmin;
+  }
+  .input-box-update{
+    margin-right:25vmin;
+  }
+  .input-box-title{
+    font-size:7vmin;
+    padding:3vmin;
+  }
+  .input-box-text{
+    font-size:4vmin;
+    margin:3vmin;
+  }
+  .user-entry{
+    font-size:3vmin;
+    margin:3vmin;
+    padding:2vmin;
+  }
+  .entry-button{
+    font-size:6vmin;
+    margin:3vmin;
+    padding:1.5vmin;
+    border-radius: 1.5vmin;
+  }
+  .track-button{
+    width: 40vmin;
+    font-size:4vmin;
+    margin: 3vmin;
+    padding:1vmin;
+  }
+  .data-division{
+    display: flex;
+  }
+  .album-img{
+    width: 40vmin;
+    margin-top:8vmin;
+    margin-bottom: 4vmin;
+  }
+  .artist-name{
+    font-size:5vmin;
+  }
+  .album-name{
+    font-size:6vmin;
+  }
+  .album-price{
+    font-size:4vmin;
+  }
+}
